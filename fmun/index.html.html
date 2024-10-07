@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FMUN 2024</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body style="background-color: rgb(243, 179, 179);">
+
+    <div class="container">
+       <center> <h1 style="background-color: rgb(183, 247, 247);width: 100px;">FMUN 2024</h1></center>
+        <form id="loginForm">
+           <center> <input type="text" id="username" placeholder="Enter your name" required>
+            <button type="submit">Login</button>
+        </form></center>
+    </div>
+
+    <audio id="backgroundMusic" src="Na Fikar na Faka by Shaka Funny Punjabi Motivation.mp3" preload="auto"></audio>
+
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const username = document.getElementById('username').value;
+            if (username) {
+                document.getElementById('backgroundMusic').play(Audio);
+                alert(`click ok, ${username}!`);
+            }
+        });
+    </script>
+</body>
+</html>
